@@ -308,10 +308,45 @@ footer {
 @media (max-width: 480px) {
     header {
         padding: 5px;
+        font-size: 0.8rem; /* Reduz o tamanho da fonte do header */
     }
 
     header input, header button {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Reduz o tamanho da fonte dos inputs e botões */
     }
 
-    header #
+    header #search-button, header #filter-button, header #back-button {
+        padding: 8px;
+        margin: 4px 0;
+        font-size: 0.8rem; /* Ajusta o tamanho da fonte dos botões */
+    }
+
+    .team-card {
+        padding: 10px;
+        flex-direction: column; /* Garante que o card se empilhe verticalmente em telas pequenas */
+        align-items: center;
+    }
+
+    .team-card img.logo {
+        height: 80px;
+        width: 80px;
+        margin-right: 0;
+        margin-bottom: 10px; /* Reduz a margem inferior da imagem */
+    }
+
+    .info-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Ajusta o espaçamento entre os cards */
+    }
+
+    .info-card {
+        max-width: 100%;
+        margin-bottom: 5px; /* Reduz a margem inferior dos cards de informações */
+    }
+
+    #team-info-container, #team-list-container {
+        width: 100%;
+        padding: 10px; /* Adiciona um pouco de padding para evitar que o conteúdo fique grudado nas bordas */
+    }
+}
