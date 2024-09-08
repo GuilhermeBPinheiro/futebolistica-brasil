@@ -34,6 +34,7 @@ Para executar o projeto localmente, siga os passos abaixo:
  ```
 
 3. **Abra o Arquivo index.html em Seu Navegador:**
+
 Simplesmente abra o arquivo index.html em seu navegador para visualizar o site localmente.
 
 ## Contribuições
