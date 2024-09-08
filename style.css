@@ -69,46 +69,37 @@ header #back-button {
 
 /* Estilos para o container de informações do time */
 #team-info-container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px; /* Limita a largura máxima do container */
     margin-top: 20px;
 }
 
 /* Estilos para o card do time */
 .team-card {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column; /* Muda para coluna para exibir verticalmente */
+    align-items: center;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px; /* Ajusta a margem inferior */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    gap: 20px;
-    box-sizing: border-box;
-    width: 100%; /* Garante que o card ocupe toda a largura disponível */
-    max-width: 1200px; /* Limita a largura máxima do card */
+    width: 100%;
 }
 
 /* Estilos para a imagem do logo */
 .team-card img.logo {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
-    margin-right: 20px;
-    flex-shrink: 0;
+    margin-bottom: 20px; /* Ajusta a margem inferior */
 }
 
 /* Ajustes adicionais para o container de informações do time */
-.team-card .team-info-left {
-    flex: 1;
-    margin-left: 20px;
-}
-
-.team-card .team-info-right {
-    flex: 2;
-    margin-right: 20px;
-    box-sizing: border-box;
+.team-card .team-info-left, .team-card .team-info-right {
+    margin: 10px 0; /* Ajusta a margem */
+    text-align: center;
 }
 
 /* Ajustes para o título e descrição do time */
@@ -131,10 +122,10 @@ header #back-button {
 /* Estilos para os cards de informações adicionais */
 .info-cards {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
-    width: 100%; /* Garante que os cards ocupem toda a largura disponível */
+    width: 90%;
     max-width: 1200px; /* Limita a largura máxima dos cards */
 }
 
@@ -143,11 +134,10 @@ header #back-button {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    flex: 1;
+    width: 100%;
+    max-width: 300px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 300px;
-    width: 100%; /* Garante que o card ocupe toda a largura disponível */
 }
 
 .info-card img {
@@ -172,9 +162,9 @@ header #back-button {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    margin-top: 20px;
+    width: 90%;
     max-width: 1200px; /* Limita a largura máxima do container */
+    margin-top: 20px;
 }
 
 #team-list-container ul {
@@ -241,20 +231,13 @@ footer {
 /* Estilos responsivos */
 @media (max-width: 1024px) {
     .team-card {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Garante que os cards sejam exibidos verticalmente */
     }
 
     .team-card img.logo {
         height: 150px;
         width: 150px;
-        margin-right: 0;
         margin-bottom: 20px;
-    }
-
-    .team-card .team-info-left, .team-card .team-info-right {
-        margin: 0;
-        text-align: center;
     }
 
     .info-cards {
