@@ -23,15 +23,15 @@ Para executar o projeto localmente, siga os passos abaixo:
 
 1. **Clone o Repositório:**
 
-   ```bash
-   git clone https://github.com/seu-usuario/futebolistica-brasil.git
-    ```
+```bash
+ git clone https://github.com/seu-usuario/futebolistica-brasil.git
+ ```
 
 2. **Navegue para o Diretório do Projeto:**
 
-  ```bash
-  cd futebolistica-brasil
-  ```
+ ```bash
+ cd futebolistica-brasil
+ ```
 
 3. **Abra o Arquivo index.html em Seu Navegador:**
 Simplesmente abra o arquivo index.html em seu navegador para visualizar o site localmente.
