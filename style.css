@@ -10,6 +10,7 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh; /* Garante que o body tenha pelo menos a altura da viewport */
     box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
+    overflow-x: hidden; /* Garante que não haja rolagem horizontal */
 }
 
 /* Estilos para o header */
@@ -20,6 +21,8 @@ header {
     border-bottom: 1px solid #ddd;
     position: relative;
     z-index: 1;
+    width: 100%; /* Garante que o header ocupe toda a largura */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
 }
 
 /* Esconde elementos que não devem ser exibidos inicialmente */
@@ -34,6 +37,7 @@ main {
     align-items: center;
     padding: 20px;
     width: 100%; /* Garante que main ocupe toda a largura disponível */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
 }
 
 /* Estilos para os inputs e botões no header */
@@ -69,9 +73,10 @@ header #back-button {
 
 /* Estilos para o container de informações do time */
 #team-info-container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px; /* Limita a largura máxima do container */
     margin-top: 20px;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
 }
 
 /* Estilos para o card do time */
@@ -86,6 +91,7 @@ header #back-button {
     margin-bottom: 20px; /* Ajusta a margem inferior */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
 }
 
 /* Estilos para a imagem do logo */
@@ -125,8 +131,9 @@ header #back-button {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 90%;
+    width: 100%;
     max-width: 1200px; /* Limita a largura máxima dos cards */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
 }
 
 .info-card {
@@ -162,9 +169,10 @@ header #back-button {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 90%;
+    width: 100%;
     max-width: 1200px; /* Limita a largura máxima do container */
     margin-top: 20px;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
 }
 
 #team-list-container ul {
@@ -181,6 +189,7 @@ header #back-button {
     margin-bottom: 10px;
     font-size: 1rem;
     cursor: pointer;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
 }
 
 #team-list-container li a {
@@ -200,6 +209,8 @@ nav {
     align-items: center;
     justify-content: flex-start;
     border-bottom: 1px solid #ddd;
+    width: 100%; /* Garante que o nav ocupe toda a largura */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
 }
 
 /* Estilo para o botão de Jogo da Memória */
@@ -226,6 +237,8 @@ footer {
     padding: 10px;
     background-color: #f0f0f0;
     border-top: 1px solid #ddd;
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
 }
 
 /* Estilos responsivos */
