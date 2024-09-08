@@ -4,6 +4,10 @@
 
 Futebolística Brasil é um projeto de desenvolvimento de software que visa criar um site estático para fornecer informações detalhadas sobre times de futebol. O site permite que os usuários busquem times digitando seu nome ou selecionando da lista. Após a seleção, o site exibe informações relevantes sobre o time escolhido, como história, presidente, treinador atual e muito mais. Além disso, o site inclui links úteis para informações adicionais e conteúdos relacionados aos times.
 
+## Projeto
+
+![image](https://github.com/user-attachments/assets/e9818cf3-f4e5-483e-b134-d9c09db719b8)
+
 ## Funcionalidades
 
 - **Busca de Times:** Permite aos usuários buscar times digitando o nome ou selecionando da lista disponível.
