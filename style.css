@@ -166,7 +166,7 @@ header #back-button {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 40%;
     margin-top: 20px;
 }
 
@@ -197,7 +197,7 @@ header #back-button {
 
 /* Estilos para o nav */
 nav {
-    background-color: #f8f9fa;
+    background-color: #d3d3d3;
     padding: 10px;
     display: flex;
     align-items: center;
