@@ -40,6 +40,7 @@ Simplesmente abra o arquivo index.html em seu navegador para visualizar o site l
 ## Contribuições
 
 Contribuições são bem-vindas! 
+
 Se você tiver sugestões de melhorias ou encontrar problemas, sinta-se à vontade para abrir um issue ou enviar um pull request.
 
 ## Licença
