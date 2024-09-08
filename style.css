@@ -4,11 +4,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #92ff9b;
-    background-image: url('img/background_body.jpg'); /* Caminho para a sua imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra todo o fundo do body */
-    background-position: center; /* Centraliza a imagem no fundo */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    height: 100vh; /* Faz o body preencher a altura da viewport */
+    background-image: url('img/background_body.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
 }
 
 /* Estilos para o header */
@@ -17,8 +18,8 @@ header {
     padding: 20px;
     background-color: #ffffff;
     border-bottom: 1px solid #ddd;
-    position: relative; /* Necessário para o botão de voltar */
-    z-index: 1; /* Garante que o cabeçalho fique acima do fundo */
+    position: relative;
+    z-index: 1;
 }
 
 /* Esconde elementos que não devem ser exibidos inicialmente */
@@ -35,21 +36,19 @@ main {
 }
 
 /* Estilos para os inputs e botões no header */
-header input {
+header input, header button {
     padding: 10px;
     margin: 10px 0;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
 }
 
 header button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    margin: 5px;
+    cursor: pointer;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 header #search-button {
@@ -76,51 +75,52 @@ header #back-button {
 /* Estilos para o card do time */
 .team-card {
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 20px; /* Padding para criar espaço ao redor do conteúdo do card */
+    padding: 20px;
     margin-bottom: 40px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     gap: 20px;
-    box-sizing: border-box; /* Garante que o padding e border sejam incluídos nas dimensões do card */
+    box-sizing: border-box;
 }
 
 /* Estilos para a imagem do logo */
 .team-card img.logo {
-    height: 200px; /* Define a altura fixa para o logo */
-    width: 200px; /* Define a largura fixa para o logo */
-    object-fit: cover; /* Ajusta a imagem para cobrir o tamanho definido sem distorcer */
-    margin-right: 100px; /* Espaçamento entre o logo e o conteúdo à direita */
-    flex-shrink: 0; /* Impede que o logo encolha */
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin-right: 20px; /* Ajuste para telas menores */
+    flex-shrink: 0;
 }
 
 /* Ajustes adicionais para o container de informações do time */
 .team-card .team-info-left {
-    flex: 1; /* Ocupa o espaço disponível */
-    margin-left: 100px; /* Espaço à esquerda do conteúdo à esquerda do logo */
+    flex: 1;
+    margin-left: 20px; /* Ajuste para telas menores */
 }
 
 .team-card .team-info-right {
     flex: 2;
-    margin-right: 100px; /* Espaço à direita do conteúdo à direita do logo */
-    box-sizing: border-box; /* Garante que o padding seja incluído nas dimensões do container */
+    margin-right: 20px; /* Ajuste para telas menores */
+    box-sizing: border-box;
 }
 
 /* Ajustes para o título e descrição do time */
 .team-card h2 {
-    margin: 10px 0; /* Define margem uniforme superior e inferior */
+    margin: 10px 0;
     font-size: 24px;
 }
 
 .team-card p.subtitle {
-    margin: 0 0 10px 0; /* Remove a margem superior e define uma margem inferior */
+    margin: 0 0 10px 0;
     font-style: italic;
 }
 
 .team-card p.description {
-    margin: 0; /* Remove as margens superior e inferior para manter o espaçamento uniforme */
+    margin: 0;
     line-height: 1.6;
     text-align: justify;
 }
@@ -182,13 +182,13 @@ header #back-button {
     border-radius: 4px;
     padding: 10px;
     margin-bottom: 10px;
-    font-size: 1rem; /* Diminuir o tamanho da fonte do card */
+    font-size: 1rem;
     cursor: pointer;
 }
 
 #team-list-container li a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: inherit; /* Herda a cor do elemento pai */
+    text-decoration: none;
+    color: inherit;
 }
 
 #team-list-container li:hover {
@@ -197,30 +197,30 @@ header #back-button {
 
 /* Estilos para o nav */
 nav {
-    background-color: #f8f9fa; /* Cor de fundo do nav */
-    padding: 10px; /* Adiciona algum espaçamento ao redor do conteúdo do nav */
-    display: flex; /* Usado para alinhar itens no nav */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    justify-content: flex-start; /* Alinha os itens à esquerda */
-    border-bottom: 1px solid #ddd; /* Adiciona uma borda inferior */
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #ddd;
 }
 
 /* Estilo para o botão de Jogo da Memória */
 #external-button {
-    background-color: #ff4400; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    border: none; /* Remove a borda padrão */
-    border-radius: 5px; /* Arredondar os cantos do botão */
-    padding: 5px 10px; /* Diminui o espaçamento interno ao botão */
-    font-size: 0.9rem; /* Reduz o tamanho da fonte */
-    cursor: pointer; /* Adiciona o cursor pointer para indicar que é clicável */
-    text-decoration: none; /* Remove o sublinhado do link */
-    display: inline-block; /* Faz o link se comportar como um botão */
-    margin-right: 10px; /* Adiciona uma margem direita para espaçar do próximo item */
+    background-color: #ff4400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 #external-button:hover {
-    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+    background-color: #ff2200;
 }
 
 /* Estilos para o footer */
@@ -233,7 +233,6 @@ footer {
 
 /* Estilos responsivos */
 @media (max-width: 1024px) {
-    /* Ajustes para tablets e telas médias */
     .team-card {
         flex-direction: column;
         align-items: center;
@@ -247,13 +246,8 @@ footer {
     }
 
     .team-card .team-info-left, .team-card .team-info-right {
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0;
         text-align: center;
-    }
-
-    .team-card .team-info-right {
-        margin-bottom: 20px;
     }
 
     .info-cards {
@@ -272,7 +266,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /* Ajustes para dispositivos móveis pequenos */
     header {
         padding: 10px;
     }
@@ -312,7 +305,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-    /* Ajustes para dispositivos móveis muito pequenos */
     header {
         padding: 5px;
     }
@@ -321,30 +313,4 @@ footer {
         font-size: 0.8rem;
     }
 
-    header #search-button, header #filter-button, header #back-button {
-        padding: 8px;
-    }
-
-    .team-card img.logo {
-        height: 100px;
-        width: 100px;
-    }
-
-    .info-card {
-        padding: 15px;
-        max-width: 100%;
-    }
-
-    .team-card .team-info-left, .team-card .team-info-right {
-        margin: 0;
-        text-align: center;
-    }
-
-    .team-card {
-        padding: 5px;
-    }
-
-    footer {
-        font-size: 0.8rem;
-    }
-}
+    header #
