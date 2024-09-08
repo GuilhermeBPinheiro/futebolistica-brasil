@@ -230,3 +230,121 @@ footer {
     background-color: #f0f0f0;
     border-top: 1px solid #ddd;
 }
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+    /* Ajustes para tablets e telas médias */
+    .team-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card img.logo {
+        height: 150px;
+        width: 150px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .team-card .team-info-left, .team-card .team-info-right {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .team-card .team-info-right {
+        margin-bottom: 20px;
+    }
+
+    .info-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #team-info-container, #team-list-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para dispositivos móveis pequenos */
+    header {
+        padding: 10px;
+    }
+
+    header input, header button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    header #search-button, header #filter-button, header #back-button {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .team-card {
+        padding: 10px;
+    }
+
+    .team-card img.logo {
+        height: 120px;
+        width: 120px;
+    }
+
+    .info-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #team-info-container, #team-list-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para dispositivos móveis muito pequenos */
+    header {
+        padding: 5px;
+    }
+
+    header input, header button {
+        font-size: 0.8rem;
+    }
+
+    header #search-button, header #filter-button, header #back-button {
+        padding: 8px;
+    }
+
+    .team-card img.logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .info-card {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .team-card .team-info-left, .team-card .team-info-right {
+        margin: 0;
+        text-align: center;
+    }
+
+    .team-card {
+        padding: 5px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
