@@ -1,0 +1,232 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #92ff9b;
+    background-image: url('img/background_body.jpg'); /* Caminho para a sua imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra todo o fundo do body */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    height: 100vh; /* Faz o body preencher a altura da viewport */
+}
+
+/* Estilos para o header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    position: relative; /* Necessário para o botão de voltar */
+    z-index: 1; /* Garante que o cabeçalho fique acima do fundo */
+}
+
+/* Esconde elementos que não devem ser exibidos inicialmente */
+#team-info-container, #team-list-container, #back-button {
+    display: none;
+}
+
+/* Estilos para o main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos para os inputs e botões no header */
+header input {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+header button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header #search-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+header #filter-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+header #back-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Estilos para o container de informações do time */
+#team-info-container {
+    width: 80%;
+    margin-top: 20px;
+}
+
+/* Estilos para o card do time */
+.team-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px; /* Padding para criar espaço ao redor do conteúdo do card */
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    box-sizing: border-box; /* Garante que o padding e border sejam incluídos nas dimensões do card */
+}
+
+/* Estilos para a imagem do logo */
+.team-card img.logo {
+    height: 200px; /* Define a altura fixa para o logo */
+    width: 200px; /* Define a largura fixa para o logo */
+    object-fit: cover; /* Ajusta a imagem para cobrir o tamanho definido sem distorcer */
+    margin-right: 100px; /* Espaçamento entre o logo e o conteúdo à direita */
+    flex-shrink: 0; /* Impede que o logo encolha */
+}
+
+/* Ajustes adicionais para o container de informações do time */
+.team-card .team-info-left {
+    flex: 1; /* Ocupa o espaço disponível */
+    margin-left: 100px; /* Espaço à esquerda do conteúdo à esquerda do logo */
+}
+
+.team-card .team-info-right {
+    flex: 2;
+    margin-right: 100px; /* Espaço à direita do conteúdo à direita do logo */
+    box-sizing: border-box; /* Garante que o padding seja incluído nas dimensões do container */
+}
+
+/* Ajustes para o título e descrição do time */
+.team-card h2 {
+    margin: 10px 0; /* Define margem uniforme superior e inferior */
+    font-size: 24px;
+}
+
+.team-card p.subtitle {
+    margin: 0 0 10px 0; /* Remove a margem superior e define uma margem inferior */
+    font-style: italic;
+}
+
+.team-card p.description {
+    margin: 0; /* Remove as margens superior e inferior para manter o espaçamento uniforme */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Estilos para os cards de informações adicionais */
+.info-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.info-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.info-card h3 {
+    margin-top: 32px;
+    font-size: 18px;
+}
+
+.info-card p {
+    margin: 15px 0;
+}
+
+/* Estilos para o container da lista de times */
+#team-list-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-top: 20px;
+}
+
+#team-list-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#team-list-container li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem; /* Diminuir o tamanho da fonte do card */
+    cursor: pointer;
+}
+
+#team-list-container li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: inherit; /* Herda a cor do elemento pai */
+}
+
+#team-list-container li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para o nav */
+nav {
+    background-color: #f8f9fa; /* Cor de fundo do nav */
+    padding: 10px; /* Adiciona algum espaçamento ao redor do conteúdo do nav */
+    display: flex; /* Usado para alinhar itens no nav */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    border-bottom: 1px solid #ddd; /* Adiciona uma borda inferior */
+}
+
+/* Estilo para o botão de Jogo da Memória */
+#external-button {
+    background-color: #ff4400; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Arredondar os cantos do botão */
+    padding: 5px 10px; /* Diminui o espaçamento interno ao botão */
+    font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    cursor: pointer; /* Adiciona o cursor pointer para indicar que é clicável */
+    text-decoration: none; /* Remove o sublinhado do link */
+    display: inline-block; /* Faz o link se comportar como um botão */
+    margin-right: 10px; /* Adiciona uma margem direita para espaçar do próximo item */
+}
+
+#external-button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilos para o footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+}

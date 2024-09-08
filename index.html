@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutEstatistica_Brasil</title>
+    <meta name="description" content="Seu site completo sobre estatísticas de futebol brasileiro.">
+
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nav pode ser usado para navegação futura, se necessário -->
+    <nav>
+        <!-- Botão externo transformado em um botão com estilo -->
+        <a id="external-button" href="https://guilhermebpinheiro.github.io/Jogo-Memoria/" target="_blank">Visite o Jogo da Memória</a>
+    </nav>    
+    
+    <header>
+        <h1>FUTEBOLÍSTICA BRASIL</h1>
+        <!-- Campo de busca do time -->
+        <input id="team-search" type="text" placeholder="Digite o nome do time">
+        <!-- Botões de ação -->
+        <button id="search-button">Pesquisar</button>
+        <button id="filter-button">Mostrar Opções de Time</button>
+        <!-- Botão de voltar, oculto inicialmente -->
+        <button id="back-button" style="display:none;">Voltar ao Menu</button>
+    </header>
+
+    <!-- Container principal, com classe para página específica -->
+    <main class="page-team">
+        <!-- Container para as informações do time -->
+        <div id="team-info-container"></div>
+        <!-- Container para a lista de times -->
+        <div id="team-list-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; Projeto Alura Gemini 2024 - Ciência de Dados Esportivos</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/guilherme-bueno-a96806192/" target="_blank">Guilherme Bueno</a></p>
+        <p>GitHub: <a href="https://github.com/GuilhermeBPinheiro" target="_blank">Guilherme B Pinheiro</a></p>
+        <p>Todos os direitos e informações estão reservados para suas respectivas empresas.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="datas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
