@@ -5,9 +5,10 @@ body {
     padding: 0;
     background-color: #92ff9b;
     background-image: url('img/background_body.jpg');
-    background-size: contain; /* Ajusta a imagem para se ajustar dentro do body */
+    background-size: cover; /* Ajusta a imagem para cobrir o body */
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 100vh; /* Garante que o body tenha pelo menos a altura da viewport */
     box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
 }
 
@@ -196,7 +197,7 @@ header #back-button {
 
 /* Estilos para o nav */
 nav {
-    background-color: #d3d3d3;
+    background-color: #f5fffa;
     padding: 10px;
     display: flex;
     align-items: center;
