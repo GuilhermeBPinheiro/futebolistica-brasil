@@ -9,8 +9,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 200vh;
-    box-sizing: border-box;
-    overflow-x: hidden; /* Garante que não haja rolagem horizontal */
+    box-sizing: border-box; 
+    overflow-x: hidden;
 }
 
 /* Estilos para o header */
@@ -43,7 +43,7 @@ header input, header button {
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 header button {
@@ -93,19 +93,19 @@ header #back-button {
     height: 200px;
     width: 200px;
     object-fit: cover;
-    margin-right: 20px; /* Ajuste para telas menores */
+    margin-right: 20px; 
     flex-shrink: 0;
 }
 
 /* Ajustes adicionais para o container de informações do time */
 .team-card .team-info-left {
     flex: 1;
-    margin-left: 20px; /* Ajuste para telas menores */
+    margin-left: 20px; 
 }
 
 .team-card .team-info-right {
     flex: 2;
-    margin-right: 20px; /* Ajuste para telas menores */
+    margin-right: 20px; 
     box-sizing: border-box;
 }
 
@@ -314,31 +314,4 @@ footer {
         font-size: 0.8rem;
     }
 
-    header #search-button, header #filter-button, header #back-button {
-        padding: 8px;
-        margin: 4px 0;
-    }
-
-    .team-card {
-        padding: 5px;
-    }
-
-    .team-card img.logo {
-        height: 80px;
-        width: 80px;
-    }
-
-    .info-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .info-card {
-        max-width: 100%;
-        margin-bottom: 5px;
-    }
-
-    #team-info-container, #team-list-container {
-        width: 100%;
-    }
-}
+    header #
