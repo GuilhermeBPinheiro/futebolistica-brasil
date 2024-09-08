@@ -38,7 +38,9 @@ Para executar o projeto localmente, siga os passos abaixo:
 Simplesmente abra o arquivo index.html em seu navegador para visualizar o site localmente.
 
 ## Contribuições
-Contribuições são bem-vindas! Se você tiver sugestões de melhorias ou encontrar problemas, sinta-se à vontade para abrir um issue ou enviar um pull request.
+
+Contribuições são bem-vindas! 
+Se você tiver sugestões de melhorias ou encontrar problemas, sinta-se à vontade para abrir um issue ou enviar um pull request.
 
 ## Licença
 Este projeto está licenciado sob a MIT License.
