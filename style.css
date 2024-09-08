@@ -5,10 +5,9 @@ body {
     padding: 0;
     background-color: #92ff9b;
     background-image: url('img/background_body.jpg');
-    background-size: cover;
+    background-size: contain; /* Ajusta a imagem para se ajustar dentro do body */
     background-position: center;
     background-repeat: no-repeat;
-    height: 200vh;
     box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
 }
 
@@ -313,4 +312,31 @@ footer {
         font-size: 0.8rem;
     }
 
-    header #
+    header #search-button, header #filter-button, header #back-button {
+        padding: 8px;
+        margin: 4px 0;
+    }
+
+    .team-card {
+        padding: 5px;
+    }
+
+    .team-card img.logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .info-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #team-info-container, #team-list-container {
+        width: 100%;
+    }
+}
